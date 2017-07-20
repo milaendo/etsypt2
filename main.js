@@ -14,8 +14,9 @@ let url= "https://api.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b71
               htmlstr = `
                 <div class="items">
                   <div>
-                  <img src="${this.url_170x135}">
+                  <img src="${this.url_170x135}"/>
                   <span>${data.title} </span>
+                  <span>${this.shop_name}</span>
                   </div>
                 
                 </div>
@@ -23,6 +24,7 @@ let url= "https://api.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b71
 
 
             })
+            console.log (data)
             main.innerHTML=htmlstr
          })
 
