@@ -9,6 +9,21 @@ let url= "https://api.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b71
           return
         }
         response.json().then(function(data) {
-      })
+          let htmlstr = ``
+            data.results.forEach(function(data){
+              htmlstr = `
+                <div class="items">
+                  <div>
+                  <img src="${this.url_170x135}">
+                  <span>${data.title} </span>
+                  </div>
+                
+                </div>
+              `
+
+
+            })
+            main.innerHTML=htmlstr
+         })
 
       })
