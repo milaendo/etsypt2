@@ -1,0 +1,50 @@
+.header {
+	height:75px;
+	display: flex;
+	padding: 20px;
+	color: orange;
+
+}
+.logIn {
+	float: right;
+}
+.logIn button{
+
+}
+.sideBar {
+	float: left;
+	width:300px;
+	padding:20px;
+	margin: 20px;
+	border:1px solid gray;
+}
+.mainNav {
+	height:50px;
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}
+.smallNav {
+	margin: 20px;
+	border: 1px solid gray;;
+	float: right;
+	width:1000px
+
+}
+.mainContain{
+	display: flex;
+}
+.mainItems {
+	margin: 10px 20px;
+	border:1px solid gray;
+	width:1000px;
+	float: right;
+	
+}
+.items {
+	display: flex;
+}
+.items div{
+	margin: 0 20px 0px 0;
+	padding: 20px;
+	border:1px solid gray;
+}
